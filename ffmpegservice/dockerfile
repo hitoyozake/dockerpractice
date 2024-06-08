@@ -1,0 +1,6 @@
+FROM ubuntu:latest
+
+RUN apt update && apt install -y ffmpeg
+COPY runffmpeg.sh /usr/local/bin
+RUN echo "THIS IS PROGRESS OUTPUT"
+ENTRYPOINT ["runffmpeg.sh"]
