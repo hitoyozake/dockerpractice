@@ -6,4 +6,10 @@ services:
       ports:
         - 8080:80
 
+  ffmpeg:
+      image: runffmpeg
+      volumes: 
+        - ./:/home/hosts
+  
+
 
